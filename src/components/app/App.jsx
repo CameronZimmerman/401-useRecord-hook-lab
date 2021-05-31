@@ -47,9 +47,10 @@ function App() {
 
   return (
     <>
-      <button onClick={undo}>undo</button>
-      <button onClick={redo}>redo</button>
+      <button role="undo" onClick={undo}>undo</button>
+      <button role="redo" onClick={redo}>redo</button>
       <input type="color"
+        role="input"
         value={current} 
         onChange={({ target }) => record(target.value)} />
       <div style=
